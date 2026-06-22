@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEEN'Z Trip & Tour - Eksplorasi Seru Bandar Jaya ke Bandung</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navyCustom: '#0D294E',
+                        goldCustom: '#D4AF37',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+    <!-- NAVBAR -->
+    <nav class="bg-navyCustom text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <!-- Ganti src dengan path file KEEN’Z LOGO.jpg Anda -->
+                <img src="NEW LOGO.jpg" alt="KEEN'Z Trip & Tour Logo" class="h-16 w-auto object-contain">
+                <span class="text-xl font-bold tracking-wider text-goldCustom hidden sm:block"></span>
+            </div>
+            <div class="space-x-6 text-sm font-medium">
+                <a href="#home" class="hover:text-goldCustom transition">Home</a>
+                <a href="#paket" class="hover:text-goldCustom transition">Paket Wisata</a>
+                <a href="#rundown" class="hover:text-goldCustom transition">Rundown</a>
+				<a href="#tentang" class="hover:text-goldCustom transition">Tentang Kami</a>
+                <a href="#kontak" class="bg-goldCustom text-navyCustom px-4 py-2 rounded font-bold hover:bg-yellow-500 transition">Pesan Sekarang</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header id="home" class="relative bg-navyCustom text-white py-24 px-6 text-center overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-cover bg-center" style="background-image: url('https://asset.kompas.com/crops/xfAYgnPfGQzzgiRrFB2oJ46_IyI=/0x175:900x775/1200x800/data/photo/2022/01/06/61d6a990c4220.jpg');"></div>
+        <div class="relative z-10 max-w-3xl mx-auto">
+            <span class="text-goldCustom font-bold tracking-widest uppercase text-sm block mb-2">Open Trip Premium</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Jelajahi Bandung Bersama</h1>
+			<h1 class="text-4xl md:text-6xl font-extrabold mb-4">KEEN'Z Tour & Trip</h1>
+            <p class="text-lg text-gray-300 mb-8">Rute Eksklusif: Bandar Jaya (Lampung) langsung menuju indahnya Kota Kembang, Bandung. Perjalanan nyaman, aman, dan berkesan!</p>
+            <a href="#paket" class="bg-goldCustom text-navyCustom px-8 py-3 rounded-full font-bold text-lg shadow-lg hover:scale-105 transition transform inline-block">Lihat Detail Paket</a>
+        </div>
+    </header>
+
+<!-- TENTANG KAMI -->
+    <section id="tentang" class="py-16 px-6 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                <!-- Sisi Kiri: Logo / Identitas -->
+                <div class="md:col-span-4 flex justify-center">
+                    <img src="KEEN’Z WEB.jpg" alt="KEEN'Z Trip & Tour" class="w-48 h-auto shadow-md rounded-xl p-4 bg-gray-50">
+                </div>
+                <!-- Sisi Kanan: Teks Keunggulan -->
+                <div class="md:col-span-8">
+                    <span class="text-goldCustom font-bold text-sm tracking-wider uppercase">Mengenal Lebih Dekat</span>
+                    <h2 class="text-3xl font-bold text-navyCustom mt-1 mb-4">Kenapa Harus Bersama KEEN'Z?</h2>
+                    <p class="text-gray-600 mb-4 text-justify leading-relaxed">
+                        Berawal dari komitmen untuk menghadirkan perjalanan yang aman dan berkesan, <strong>KEEN'Z Trip & Tour</strong> hadir sebagai agen perjalanan terpercaya yang berbasis di Bandar Jaya. Diwakili oleh lambang Siger Lampung emas dan kemegahan gunung pada logo kami, kami mendedikasikan diri untuk memberikan standar layanan wisata prima yang profesional namun tetap hangat.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-start space-x-2">
+                            <span class="text-goldCustom font-bold text-lg">✓</span>
+                            <p class="text-sm text-gray-700"><strong>Layanan All-In & Transparan:</strong> Budget sudah mencakup semua fasilitas pokok tanpa ada biaya tersembunyi.</p>
+                        </div>
+                        <div class="flex items-start space-x-2">
+                            <span class="text-goldCustom font-bold text-lg">✓</span>
+                            <p class="text-sm text-gray-700"><strong>Kenyamanan Prioritas Utama:</strong> Dari titik kumpul Bandar Jaya hingga destinasi Bandung, kami bermitra dengan penyedia armada eksekutif dan akomodasi terbaik.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DETAIL PAKET & HARGA -->
+    <section id="paket" class="py-16 px-6 container mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-navyCustom">Paket Wisata Bandar Jaya &rarr; Bandung</h2>
+            <p class="text-gray-600 mt-2">Satu harga untuk sejuta kenangan indah</p>
+        </div>
+
+        <div class="max-w-md mx-auto bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+            <div class="bg-navyCustom p-6 text-center text-white">
+                <h3 class="text-2xl font-bold">All-In One Wisata Bandung</h3>
+				<h3 class="text-2xl font-bold">3 Hari 2 Malam</h3>
+				<h3 class="text-sm text-gray-400">Max 14 orang</h3>
+                <div class="mt-4">
+                    <span class="text-4xl font-extrabold text-goldCustom">Rp 2.300.000</span>
+                    <span class="text-sm text-gray-400"> / orang</span>
+                </div>
+            </div>
+            <div class="p-8">
+                <h4 class="font-bold text-navyCustom mb-4">Fasilitas Termasuk:</h4>
+                <ul class="space-y-3 text-sm text-gray-600 mb-8">
+                    <li class="flex items-center">
+                        <span class="text-green-500 mr-2">&#10004;</span> [Transportasi Bus Pariwisata AC Eksekutif (Bandar Jaya - Bandung PP)]
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-green-500 mr-2">&#10004;</span> [Hotel Berbintang / Penginapan Nyaman (2 Malam)]
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-green-500 mr-2">&#10004;</span> [Makan sesuai program (Sarapan, Makan Siang, Makan Malam)]
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-green-500 mr-2">&#10004;</span> Tiket Masuk Seluruh Destinasi Wisata sesuai Rundown
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-green-500 mr-2">&#10004;</span> Tour Leader & Dokumentasi Perjalanan
+                    </li>
+                </ul>
+                <a href="#kontak" class="block text-center bg-navyCustom text-white py-3 rounded-lg font-bold hover:bg-blue-900 transition">Booking Kursimu Sekarang</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- RUNDOWN PERJALANAN -->
+    <section id="rundown" class="bg-gray-100 py-16 px-6">
+        <div class="container mx-auto max-w-4xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-navyCustom">Rundown Acara</h2>
+                <p class="text-gray-600 mt-2">Agenda perjalanan seru yang telah kami siapkan</p>
+            </div>
+
+            <!-- Timeline Rundown -->
+            <div class="space-y-8 relative before:absolute before:inset-0 before:left-4 md:before:left-1/2 before:w-0.5 before:bg-gray-300">
+                
+                <!-- Hari 1 -->
+                <div class="relative flex flex-col md:flex-row items-start md:items-center justify-between">
+                    <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 bg-goldCustom w-4 h-4 rounded-full border-4 border-white"></div>
+                    <div class="w-full md:w-[45%] pl-12 md:pl-0 md:text-right">
+                        <span class="font-bold text-goldCustom">Hari 1 - Perjalanan & Kedatangan</span>
+                        <h4 class="text-lg font-bold text-navyCustom mt-1">[MALAM KEBERANGKATAN (Kamis Malam)]</h4>
+                        <p class="text-sm text-gray-600 mt-1">[Meeting Point di Bandar Jaya (Lokasi bisa disepakati, misal: Depan Plaza Bandar Jaya). Registrasi peserta dan penataan bagasi.]</p>
+                    </div>
+                    <div class="w-full md:w-[45%] hidden md:block"></div>
+                </div>
+
+                <!-- Hari 2 -->
+                <div class="relative flex flex-col md:flex-row items-start md:items-center justify-between">
+                    <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 bg-goldCustom w-4 h-4 rounded-full border-4 border-white"></div>
+                    <div class="w-full md:w-[45%] hidden md:block"></div>
+                    <div class="w-full md:w-[45%] pl-12">
+                        <span class="font-bold text-goldCustom">Hari 2 - Eksplorasi Wisata</span>
+                        <h4 class="text-lg font-bold text-navyCustom mt-1">[Tour Bandung Utara / Selatan]</h4>
+                        <p class="text-sm text-gray-600 mt-1">[Mengunjungi Tangkuban Perahu/Kawah Putih, Asia Afrika, dan makan malam romantis di Lembang.]</p>
+                    </div>
+                </div>
+
+                <!-- Hari 3 -->
+                <div class="relative flex flex-col md:flex-row items-start md:items-center justify-between">
+                    <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 bg-goldCustom w-4 h-4 rounded-full border-4 border-white"></div>
+                    <div class="w-full md:w-[45%] pl-12 md:pl-0 md:text-right">
+                        <span class="font-bold text-goldCustom">Hari 3 - Belanja Oleh-Oleh & Pulang</span>
+                        <h4 class="text-lg font-bold text-navyCustom mt-1">[Berburu Buah Tangan & Kembali ke Lampung]</h4>
+                        <p class="text-sm text-gray-600 mt-1">[Belanja di Cibaduyut/Kartika Sari, kemudian bersiap perjalanan pulang menuju Bandar Jaya.]</p>
+                    </div>
+                    <div class="w-full md:w-[45%] hidden md:block"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK / CALL TO ACTION -->
+    <section id="kontak" class="py-16 px-6 text-center bg-navyCustom text-white">
+        <h2 class="text-3xl font-bold mb-4">Siap Berlibur Bersama Kami?</h2>
+        <p class="text-gray-300 max-w-xl mx-auto mb-8">Amankan kursi Anda sekarang juga sebelum kehabisan kuota Open Trip ini!</p>
+        
+        <!-- LINK WHATSAPP -->
+        <a href="https://wa.me/089618331839?text=Halo%20KEENZ%20Trip,%20saya%20tertarik%20booking%20paket%20Bandar%20Jaya%20Bandung" 
+           target="_blank" 
+           class="bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-lg shadow-lg inline-flex items-center space-x-2 transition">
+            <span>Hubungi via WhatsApp</span>
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-500 text-center py-6 text-sm border-t border-gray-800">
+        <p>&copy; 2026 KEEN'Z Trip & Tour. All rights reserved.</p>
+        <p class="mt-1">Bandar Jaya - Lampung</p>
+    </footer>
+
+</body>
+</html>
