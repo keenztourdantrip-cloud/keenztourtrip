@@ -210,5 +210,129 @@
 
         </div>
     </footer>
+<div class="testimoni-container">
+  <h2>Berikan Penilaian & Ulasan Anda</h2>
+  <p>Kepuasan Anda adalah prioritas kami. Bagikan pengalaman perjalanan Anda bersama Keenz Tour Trip!</p>
+
+  <form name="ulasan-travel" method="POST" data-netlify="true">
+    
+    <div class="rating-wrapper">
+      <label class="label-title">Rating Layanan:</label>
+      <div class="stars-rating">
+        <input type="radio" id="star5" name="bintang" value="5" required /><label for="star5" title="Sangat Bagus">★</label>
+        <input type="radio" id="star4" name="bintang" value="4" /><label for="star4" title="Bagus">★</label>
+        <input type="radio" id="star3" name="bintang" value="3" /><label for="star3" title="Cukup">★</label>
+        <input type="radio" id="star2" name="bintang" value="2" /><label for="star2" title="Buruk">★</label>
+        <input type="radio" id="star1" name="bintang" value="1" /><label for="star1" title="Sangat Buruk">★</label>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <label for="nama-user">Nama Lengkap:</label>
+      <input type="text" id="nama-user" name="nama" placeholder="Masukkan nama Anda..." required />
+    </div>
+
+    <div class="input-group">
+      <label for="email-user">Email (Opsional):</label>
+      <input type="email" id="email-user" name="email" placeholder="nama@email.com" />
+    </div>
+
+    <div class="input-group">
+      <label for="komentar-user">Komentar / Ulasan:</label>
+      <textarea id="komentar-user" name="komentar" rows="5" placeholder="Tuliskan pengalaman tur Anda di sini..." required></textarea>
+    </div>
+
+    <button type="submit" class="btn-kirim">Kirim Ulasan</button>
+  </form>
+</div>
+
+<style>
+  .testimoni-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .testimoni-container h2 {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .testimoni-container p {
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .input-group {
+    margin-bottom: 20px;
+  }
+  .input-group label, .label-title {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #444;
+  }
+  .input-group input[type="text"],
+  .input-group input[type="email"],
+  .input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+  .input-group input:focus, .input-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Styling Rating Bintang */
+  .rating-wrapper {
+    margin-bottom: 20px;
+  }
+  .stars-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+  .stars-rating input {
+    display: none;
+  }
+  .stars-rating label {
+    font-size: 35px;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+    margin-right: 5px;
+  }
+  /* Efek warna saat bintang dipilih atau diarahkan kursor (hover) */
+  .stars-rating input:checked ~ label,
+  .stars-rating label:hover,
+  .stars-rating label:hover ~ label {
+    color: #ffc107; /* Warna Bintang Emas */
+  }
+
+  /* Tombol Kirim */
+  .btn-kirim {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745; /* Warna Hijau sukses */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .btn-kirim:hover {
+    background-color: #218838;
+  }
+</style>
 </body>
 </html>
