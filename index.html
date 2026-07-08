@@ -210,152 +210,32 @@
 
         </div>
     </footer>
-<!-- ========================================== -->
-<!-- FORM RATING & KOMENTAR (NAVY THEME)        -->
-<!-- ========================================== -->
-<div class="testimoni-container">
-  <h2>Berikan Penilaian & Ulasan</h2>
-  <p>Bagikan pengalaman perjalanan Anda bersama Keenz Tour Trip!</p>
+<!-- ======================================================== -->
+<!-- POTONGAN KODE BAGIAN ULASAN & KOLOM KOMENTAR (SIAP COPAS) -->
+<!-- ======================================================== -->
+<section id="ulasan" class="py-16 px-6 bg-white border-t border-gray-100">
+    <div class="container mx-auto max-w-3xl">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold text-[#0B2447]">Ulasan & Diskusi</h2>
+            <p class="text-gray-600 mt-2">Apa kata mereka tentang KEEN'Z, atau punya pertanyaan? Tulis di bawah ini!</p>
+        </div>
 
-  <!-- Menggunakan dasar <form name="contact" netlify> milik Anda -->
-  <form name="contact" method="POST" netlify>
-    
-    <!-- Kolom Input Nama -->
-    <p class="input-group">
-      <label>Nama Lengkap <input type="text" name="name" placeholder="Masukkan nama Anda..." required /></label>
-    </p>
-    
-    <!-- Kolom Input Email -->
-    <p class="input-group">
-      <label>Email <input type="email" name="email" placeholder="nama@email.com" required /></label>
-    </p>
-
-    <!-- BARU: Pilihan Rating Bintang 1-5 -->
-    <div class="rating-wrapper">
-      <label class="label-title">Rating Layanan</label>
-      <div class="stars-rating">
-        <input type="radio" id="star5" name="rating" value="5" required /><label for="star5" title="Sangat Bagus">★</label>
-        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Bagus">★</label>
-        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Cukup">★</label>
-        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Buruk">★</label>
-        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sangat Buruk">★</label>
-      </div>
+        <!-- Area Kolom Komentar -->
+        <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 shadow-sm">
+            <!-- 
+              TIPS UNTUK ANDA: 
+              Untuk mengaktifkan kolom komentar Disqus asli agar pengunjung bisa mengetik langsung,
+              Anda bisa mendaftar gratis di disqus.com, lalu tempel kode "Universal Embed Code" dari Disqus di sini.
+              Sementara ini, saya sediakan placeholder tampilan yang rapi.
+            -->
+            <div id="disqus_thread">
+                <p class="text-center text-gray-400 text-sm py-8">
+                    💬 [EDIT DI SINI: Kolom Komentar Siap Digunakan. Anda bisa mengintegrasikannya dengan plugin gratis seperti Disqus atau Cusdis saat website sudah dipublikasikan.]
+                </p>
+            </div>
+        </div>
     </div>
-
-    <!-- BARU: Kolom Komentar / Ulasan -->
-    <p class="input-group">
-      <label>Komentar / Ulasan
-        <textarea name="comment" rows="4" placeholder="Tuliskan ulasan tur Anda di sini..." required></textarea>
-      </label>
-    </p>
-
-    <!-- Tombol Kirim -->
-    <p>
-      <button type="submit" class="btn-kirim">Send</button>
-    </p>
-  </form>
-</div>
-
-<!-- ========================================== -->
-<!-- GAYA / TAMPILAN CSS (TEMA NAVY)            -->
-<!-- ========================================== -->
-<style>
-  .testimoni-container {
-    max-width: 500px;
-    margin: 40px auto;
-    padding: 30px;
-    background-color: #0a192f; /* Warna Navy Elegan (bisa diganti #000080 untuk Navy standar) */
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-    font-family: 'Segoe UI', Arial, sans-serif;
-    color: #ffffff; /* Semua teks utama menjadi putih */
-  }
-  
-  .testimoni-container h2 {
-    margin-top: 0;
-    margin-bottom: 5px;
-    text-align: center;
-    color: #ffffff;
-  }
-  
-  .testimoni-container p {
-    font-size: 14px;
-    color: #cbd5e1; /* Warna teks deskripsi abu-abu terang */
-    text-align: center;
-    margin-bottom: 25px;
-  }
-
-  .input-group label, .label-title {
-    display: block;
-    font-weight: 600;
-    margin-bottom: 8px;
-    color: #ffffff;
-  }
-
-  /* Mengatur gaya input teks, email, dan textarea */
-  .testimoni-container input[type="text"],
-  .testimoni-container input[type="email"],
-  .testimoni-container textarea {
-    width: 100%;
-    padding: 12px;
-    margin-top: 6px;
-    border: 1px solid #334155;
-    border-radius: 6px;
-    background-color: #1e293b; /* Background kolom input agak abu-gelap agar serasi */
-    color: #ffffff;
-    font-size: 15px;
-    box-sizing: border-box;
-  }
-
-  .testimoni-container input:focus, 
-  .testimoni-container textarea:focus {
-    border-color: #38bdf8; /* Efek warna biru muda saat diklik */
-    outline: none;
-  }
-
-  /* Sistem Rating Bintang */
-  .rating-wrapper {
-    margin-bottom: 20px;
-  }
-  .stars-rating {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    margin-top: 5px;
-  }
-  .stars-rating input {
-    display: none;
-  }
-  .stars-rating label {
-    font-size: 32px;
-    color: #475569; /* Warna bintang mati (abu-abu tua) */
-    cursor: pointer;
-    transition: color 0.2s ease;
-    margin-right: 5px;
-  }
-  /* Efek menyala emas saat diarahkan atau dipilih */
-  .stars-rating input:checked ~ label,
-  .stars-rating label:hover,
-  .stars-rating label:hover ~ label {
-    color: #ffc107; /* Warna emas */
-  }
-
-  /* Tombol Kirim */
-  .btn-kirim {
-    width: 100%;
-    padding: 12px;
-    background-color: #0284c7; /* Warna Biru Tombol */
-    color: #ffffff;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.2s;
-  }
-  .btn-kirim:hover {
-    background-color: #0369a1; /* Warna biru saat kursor di atas tombol */
-  }
-</style>
+</section>
+<!-- ======================================================== -->
 </body>
 </html>
