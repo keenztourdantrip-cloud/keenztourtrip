@@ -210,32 +210,51 @@
 
         </div>
     </footer>
-<!-- ======================================================== -->
-<!-- POTONGAN KODE BAGIAN ULASAN & KOLOM KOMENTAR (SIAP COPAS) -->
-<!-- ======================================================== -->
+<!-- ========================================================================= -->
+<!-- BALE/BAGIAN ULASAN GOOGLE FORM & GOOGLE SHEETS AUTOMATIC (SIAP COPAS)      -->
+<!-- ========================================================================= -->
 <section id="ulasan" class="py-16 px-6 bg-white border-t border-gray-100">
-    <div class="container mx-auto max-w-3xl">
+    <div class="container mx-auto max-w-4xl">
         <div class="text-center mb-10">
-            <h2 class="text-3xl font-bold text-[#0B2447]">Ulasan & Diskusi</h2>
-            <p class="text-gray-600 mt-2">Apa kata mereka tentang KEEN'Z, atau punya pertanyaan? Tulis di bawah ini!</p>
+            <h2 class="text-3xl font-bold text-[#0B2447]">Ulasan Real-Time Penumpang</h2>
+            <p class="text-gray-600 mt-2">Terima kasih atas penilaian 5 Bintang ⭐⭐⭐⭐⭐ Anda. Setiap ulasan langsung tampil otomatis di bawah ini!</p>
         </div>
 
-        <!-- Area Kolom Komentar -->
-        <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 shadow-sm">
-            <!-- 
-              TIPS UNTUK ANDA: 
-              Untuk mengaktifkan kolom komentar Disqus asli agar pengunjung bisa mengetik langsung,
-              Anda bisa mendaftar gratis di disqus.com, lalu tempel kode "Universal Embed Code" dari Disqus di sini.
-              Sementara ini, saya sediakan placeholder tampilan yang rapi.
-            -->
-            <div id="disqus_thread">
-                <p class="text-center text-gray-400 text-sm py-8">
-                    💬 [EDIT DI SINI: Kolom Komentar Siap Digunakan. Anda bisa mengintegrasikannya dengan plugin gratis seperti Disqus atau Cusdis saat website sudah dipublikasikan.]
-                </p>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+            
+            <!-- SISI KIRI: Tombol Berikan Ulasan (Link ke Google Form) -->
+            <div class="md:col-span-4 bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center">
+                <div class="text-4xl mb-2">⭐ 5.0</div>
+                <p class="text-sm text-gray-500 mb-6">Penilaian rata-rata dari seluruh kawan perjalanan KEEN'Z.</p>
+                
+                <!-- LINK KE GOOGLE FORM ANDA -->
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSemDguF0TJUyS2AKXrdvnTa8_b-BULON0ZnLJpPMRKlkp3-4A/viewform?usp=publish-editor" 
+                   target="_blank" 
+                   class="block bg-[#0B2447] text-white font-bold py-3 px-4 rounded-xl hover:bg-blue-900 transition shadow-md">
+                    ✍️ Beri Ulasan Sekarang
+                </a>
             </div>
+
+            <!-- SISI KANAN: Kotak Tampilan Ulasan Langsung (Embed Google Sheets) -->
+            <div class="md:col-span-8 bg-white rounded-2xl border border-gray-200 shadow-sm p-2 overflow-hidden">
+                <div class="bg-gray-100 px-4 py-2 rounded-t-xl text-xs font-bold text-gray-500 uppercase tracking-wider flex justify-between">
+                    <span>Daftar Ulasan Masuk</span>
+                    <span class="text-green-600 flex items-center"><span class="w-2 h-2 rounded-full bg-green-500 inline-block mr-1.5 animate-pulse"></span>Live</span>
+                </div>
+                <!-- 
+                  Ganti bagian src di bawah ini dengan Link Google Sheets yang sudah di "Publish to web" pada Langkah 1.
+                  Parameter &widget=false&headers=false digunakan agar tampilan Sheets bersih tanpa menu-menu rumus Google.
+                -->
+                <iframe 
+                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQYCSJi0tjzNQjd6lOkGktl1t1xt11lML-fB4GTTHvYhWvdBE0wZYn9nqUf2-cnWDg9tx-6JA8FS2jy/pubhtml?gid=841936067&single=true&widget=false&headers=false" 
+                    class="w-full h-80 border-0 rounded-b-xl"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
         </div>
     </div>
 </section>
-<!-- ======================================================== -->
+<!-- ========================================================================= -->
 </body>
 </html>
